@@ -46,7 +46,7 @@ function PokedexList() {
                 <button onClick={()=>setPokedex_url(nextUrl)} className='border-[1px] w-[60px] px-[16px] py-[6px] border-none bg-green-500 text-white cursor-pointer hover:scale-[102%]'>Next</button>
             </div>
             <div className='px-[20px] grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-3'>
-                {pokemonList.map(pokemon=> <Pokemon name={pokemon.name} key={pokemon.id} url={pokemon.image} type={pokemon.types}/>)}
+                {pokemonList.map(pokemon=> <Pokemon name={pokemon.name} key={pokemon.id} id={pokemon.id} url={pokemon.image} type={pokemon.types}/>)}
             </div>
             <div className='mt-[20px] mb-[30px] w-[100%] h-3 flex gap-2 justify-center items-center'>
                 <button onClick={()=>setPokedex_url(prevUrl)} className='border-[1px] w-[60px] px-[16px] py-[6px] border-none bg-blue-500 text-white cursor-pointer hover:scale-[102%] '>prev</button>
